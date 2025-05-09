@@ -28,7 +28,7 @@ const About = () => {
     setLoad(true);
     // Assuming your CV file is located in the public directory
     setTimeout(() => {
-      const downloadUrl = "/file/frankeze.pdf";
+      const downloadUrl = "/frankeze.pdf";
       const link = document.createElement("a");
       link.href = downloadUrl;
       link.download = "frankeze.pdf";
