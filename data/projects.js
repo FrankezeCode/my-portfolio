@@ -32,7 +32,7 @@ export const listProjects = [
     github: "https://github.com/FrankezeCode/QuickTask"
   },
   {
-    image: "/projects/codeai.PNG",
+    image: "/projects/codeai.png",
     title: "Coderverse AI",
     description:
       "A full-featured AI tool for generating images, videos, and text using OpenAI and Replicate APIs. Built with TypeScript, Clerk, Prisma, Tailwind CSS, and Radix UI, it offers a secure and responsive user experience.",

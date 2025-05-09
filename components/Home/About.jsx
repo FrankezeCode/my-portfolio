@@ -31,7 +31,7 @@ const About = () => {
       const downloadUrl = "/Frankeze.pdf";
       const link = document.createElement("a");
       link.href = downloadUrl;
-      link.download = "steve_cv.pdf";
+      link.download = "Frankeze.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
