@@ -39,6 +39,11 @@ const listStack = [
     proficiency: "Expert",
     level: "60",
   },
+  {
+    title: "Solidity",
+    proficiency: "Expert",
+    level: "60",
+  },
 ];
 
 const Technologies = () => {

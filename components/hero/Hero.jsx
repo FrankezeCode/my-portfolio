@@ -46,7 +46,7 @@ const Hero = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            An Expert in Frontend and Backend Web Development. Welcome to my world.
+               Software Engineer | Full-Stack Web Development | Blockchain & Web3 | Distributed Systems | Automation & Intelligent Software. 
           </p>
           <div className="flex justify-center">
           <button

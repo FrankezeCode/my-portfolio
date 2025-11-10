@@ -14,7 +14,14 @@ const listSkills = [
   "MySQL",
   "Postman",
   "Teamwork",
-  "Quick Learning",
+   "Curiosity",
+  "Foundry",
+  "Hardhat",
+  "ether.js",
+  "web3.js",
+  "Alchemy",
+  "Slither",
+  "Chainlink",
 ];
 
 const Skills = () => {

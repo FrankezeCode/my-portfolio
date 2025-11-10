@@ -87,14 +87,13 @@ const About = () => {
           >
             <p>
               {" "}
-              I’m a proactive, intelligent, and driven software engineer with expertise in both frontend and backend web development. I have built software solutions for real-world business use cases, from conceptualization to deployment.
+              I’m a proactive, intelligent, and driven software engineer with expertise in full-stack web development, blockchain, Web3, and intelligent automation. I build software solutions that solve real-world problems, from conceptualization to deployment, with a focus on scalability, reliability, and human-centered design.
             </p>
             <p>
-            Proficient in React.js, Next.js, JavaScript/TypeScript, Express, building RESTful APIs, database integration, authentication and authorization, deployment, security, integration of third-party APIs such as payment gateways, and more.
+             Proficient in React.js, Next.js, JavaScript/TypeScript, Express, RESTful APIs, database integration, authentication and authorization, deployment, security, blockchain integration, decentralized applications, and automation systems. I also contribute to open-source projects and mentor aspiring developers, bridging local communities with global opportunities.
             </p>
             <p>
-              I have great communication skills, problem solving, decision
-              making and a team player.
+              I have strong communication skills, problem-solving abilities, and a collaborative mindset, thriving in team-based and cross-disciplinary environments.
             </p>
           </div>
 
