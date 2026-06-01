@@ -1,12 +1,37 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { Oval } from "react-loader-spinner";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const photos = ["/d.svg", "/b.svg", "/c.svg"];
+const photos = ["/frankeze.jpg"];
+
+const professionalLinks = [
+  { label: "Coderverse Technology", link: "https://coderverse.shop" },
+  { label: "GitHub", link: "https://github.com/FrankezeCode" },
+  { label: "LinkedIn", link: "https://www.linkedin.com/in/franklyn-ezeugonna" },
+  { label: "X", link: "https://x.com/frankezecode_" },
+  { label: "Medium", link: "https://medium.com/@franklynezeugonna" },
+  { label: "BetterDev Community", link: "https://betterdev.live" },
+];
+
+const hackathonLinks = [
+  {
+    label: "Chainlink Convergence Hackathon",
+    link: "https://chain.link/hack-26/projects/aquarius",
+  },
+  {
+    label: "OG APAC Agentic Hackathon",
+    link: "https://www.hackquest.io/projects/Aquarius-Protocol",
+  },
+  {
+    label: "Colosseum Frontier Hackathon",
+    link: "https://arena.colosseum.org/projects/explore/aquarius-protocol",
+  },
+];
 
 const About = () => {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
@@ -26,12 +51,11 @@ const About = () => {
 
   const handleDownloadCV = () => {
     setLoad(true);
-    // Assuming your CV file is located in the public directory
     setTimeout(() => {
       const downloadUrl = "/frankeze.pdf";
       const link = document.createElement("a");
       link.href = downloadUrl;
-      link.download = "frankeze.pdf";
+      link.download = "Franklyn-Ezeugonna-CV.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -95,6 +119,62 @@ const About = () => {
             <p>
               I have strong communication skills, problem-solving abilities, and a collaborative mindset, thriving in team-based and cross-disciplinary environments.
             </p>
+            <p>
+              Beyond technology, I have a deep love for art, nature, philosophy, and humanity.
+              These passions shape how I see the world and inspire me to build meaningful,
+              human-centered solutions that connect creativity, purpose, and impact.
+            </p>
+          </div>
+
+          <div
+            className="grid gap-4 text-sm md:text-base"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <h3 className="font-bold text-lg text-white">Professional Details</h3>
+              <p className="mt-2 leading-relaxed text-[#e7e3e3]">
+                Founder of Coderverse Technology, a registered technology and e-commerce business
+                operating through online services and physical retail activity. I also founded
+                BetterDev, a mentorship community helping over 700 young people grow in software
+                development, open-source collaboration, and career readiness.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {professionalLinks.map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.link}
+                    target="_blank"
+                    className="rounded-full border border-[#41a4c8]/50 px-3 py-1 text-xs md:text-sm text-white transition hover:bg-[#41a4c8]/20"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <h3 className="font-bold text-lg text-white">Technical Projects & Recognition</h3>
+              <p className="mt-2 leading-relaxed text-[#e7e3e3]">
+                My work includes full-stack web applications, RESTful APIs, blockchain data
+                integrations, distributed systems prototypes, and community-focused mentorship. I
+                have also participated in global hackathons and received recognition for leadership,
+                civic service, and local innovation impact.
+              </p>
+              <div className="mt-4 flex flex-col gap-2">
+                {hackathonLinks.map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.link}
+                    target="_blank"
+                    className="text-[#41a4c8] transition hover:text-white"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* cv */}

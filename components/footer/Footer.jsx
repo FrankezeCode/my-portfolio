@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { SiIndeed } from "react-icons/si";
+import { FaMedium, FaXTwitter } from "react-icons/fa6";
 import { MdCall } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 
@@ -17,8 +17,16 @@ const heads = [
     ),
   },
   {
-    link: "",
-    icon: <SiIndeed size={25} color="#fff" className="w-6 h-6 md:w-7 md:h-7" />,
+    link: "https://x.com/frankezecode_",
+    icon: (
+      <FaXTwitter size={25} color="#fff" className="w-6 h-6 md:w-7 md:h-7" />
+    ),
+  },
+  {
+    link: "https://medium.com/@franklynezeugonna",
+    icon: (
+      <FaMedium size={25} color="#fff" className="w-6 h-6 md:w-7 md:h-7" />
+    ),
   },
 ];
 

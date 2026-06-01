@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { SiGamedeveloper } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { SiIndeed } from "react-icons/si";
+import { FaMedium, FaXTwitter } from "react-icons/fa6";
 import { FiMenu } from "react-icons/fi";
 import { FaRegWindowClose } from "react-icons/fa";
 import Link from "next/link";
@@ -25,8 +25,16 @@ const heads = [
     ),
   },
   {
-    link: " ",
-    icon: <SiIndeed size={25} color="#fff" className="w-6 h-6 md:w-7 md:h-7" />,
+    link: "https://x.com/frankezecode_",
+    icon: (
+      <FaXTwitter size={25} color="#fff" className="w-6 h-6 md:w-7 md:h-7" />
+    ),
+  },
+  {
+    link: "https://medium.com/@franklynezeugonna",
+    icon: (
+      <FaMedium size={25} color="#fff" className="w-6 h-6 md:w-7 md:h-7" />
+    ),
   },
 ];
 
@@ -98,6 +106,18 @@ const Navbar = () => {
               duration={500}
             >
               About
+            </ScrollLink>
+          </li>
+          <li className="cursor-pointer font-semibold transition-transform duration-300 transform hover:-translate-y-1">
+            <ScrollLink
+              activeClass="active"
+              to="gratitude"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Gratitude
             </ScrollLink>
           </li>
           <li className="cursor-pointer font-semibold transition-transform duration-300 transform hover:-translate-y-1">
@@ -195,6 +215,18 @@ const Navbar = () => {
                   className="border-b"
                 >
                   About
+                </ScrollLink>
+
+                <ScrollLink
+                  activeClass="active"
+                  to="gratitude"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="border-b"
+                >
+                  Gratitude
                 </ScrollLink>
 
                 <ScrollLink
